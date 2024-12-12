@@ -1,0 +1,96 @@
+File Structure and Descriptions
+README.md
+
+Contains project details, installation instructions, and usage guide.
+about.php
+
+Static page displaying information about the FindHire system.
+applications.php
+
+Backend file managing job applications, including fetching and updating application data.
+apply.php
+
+Handles job application submissions from applicants.
+common.php
+
+Contains reusable functions or configurations for the project.
+config.php
+
+Centralized database configuration file for connecting to the MySQL database.
+dashboard.php
+
+Main dashboard for users (applicants or HR), displaying relevant statistics and information.
+findhire.sql
+
+SQL dump file for setting up the required database structure.
+findhire_logo.png
+
+Logo of the system.
+get_messages.php
+
+Fetches messages for the messaging feature.
+get_unread_messages_count.php
+
+Retrieves the count of unread messages for notification purposes.
+job_card_applicant.php
+
+Displays job details in a card format for applicants to view.
+jobs.php
+
+Manages job postings, including creation and retrieval.
+login.php
+
+Handles user login functionality.
+logout.php
+
+Ends the user session securely.
+messages.php
+
+Displays the messaging interface between users.
+search_users.php
+
+Enables searching of users for chat or other purposes.
+send_message.php
+
+Handles sending messages between users.
+signup.php
+
+Facilitates user registration (both HR and applicants).
+styles.css
+
+Contains the CSS styles for the platform, ensuring a clean and responsive design.
+withdraw_application.php
+
+Allows applicants to withdraw their job applications.
+Installation Instructions (README.md Content)
+Clone the Repository:
+
+bash
+Copy code
+git clone https://github.com/<your-username>/FindHire.git
+Set Up the Database:
+
+Import the findhire.sql file into your MySQL database using phpMyAdmin or the MySQL CLI:
+bash
+Copy code
+mysql -u root -p findhire < findhire.sql
+Configure Database Connection:
+
+Open config.php and update the credentials:
+php
+Copy code
+$host = "localhost";
+$username = "root";
+$password = "";
+$database = "findhire";
+Run the Application:
+
+Place the repository in your web server directory (e.g., htdocs for XAMPP).
+Access the app at http://localhost/FindHire.
+Key Features
+Job posting and management.
+Application tracking (Pending, Accepted, Rejected).
+Real-time messaging system.
+User roles: HR and Applicant.
+Responsive UI using CSS.
+This structure ensures that your repository is organized, informative, and easy to use for anyone accessing or contributing to the project!
